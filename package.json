@@ -5,4 +5,4 @@
   "node-fetch": "^2.6.7"
 }
 }
-fetch hinzugefügt
+Downgrade node-fetch to v2.6.7
