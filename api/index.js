@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Nur POST erlaubt' });
@@ -8,7 +6,7 @@ export default async function handler(req, res) {
   const { text } = req.body;
 
   try {
-    const response = await fetch(https://hook.eu2.make.com/vi91y3ix4swybh7toiuk6nm1s3sgjxy9, {
+    const response = await fetch('DEINE_MAKE_WEBHOOK_URL_HIER', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text }),
@@ -21,4 +19,3 @@ export default async function handler(req, res) {
     res.status(500).json({ error: 'Interner Serverfehler' });
   }
 }
-update api/index.js with correct webhook
