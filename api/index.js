@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   try {
     const body = req.body ?? {};
-    const MAKE_WEBHOOK_URL = "https://hook.eu2.make.com/vi91y3ix4swybh7toiuk6nm1s3sgjxy9";
+    const MAKE_WEBHOOK_URL = "https://hook.eu2.make.com/5vrvdectpu55v7bdvc47rzlivgjufl1";
 
     const makeResp = await fetch(MAKE_WEBHOOK_URL, {
       method: 'POST',
