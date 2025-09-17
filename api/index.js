@@ -24,7 +24,7 @@ export default async function handler(req, res) {
 
   try {
     const body = req.body ?? {};
-    const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/5vrvdectpu55v7bdvc47rzlivgjufl1';
+    const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/5vvrdectpuy55v7bdvc47rzlivgjufl1';
 
     const makeResp = await fetch(MAKE_WEBHOOK_URL, {
       method: 'POST',
