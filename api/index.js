@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   const allowed = new Set([
     'https://www.texttuner.app',
     'https://texttuner.app',
-    'https://texttuner-app.vercel.app'   // <-- als String + ohne /
+    'https://texttuner-app.vercel.app'    
   ]);
 
   const origin = req.headers.origin;
